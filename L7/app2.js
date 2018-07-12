@@ -12,6 +12,7 @@ var app = http.createServer(function(req,res){
             fs.readFile('./login-post.html',function (err,data) {
                 if(err){return console.log(err)};
 
+
                 res.writeHead('200',{'content-type':'text/html;charset=utf-8'});
                 res.write(data.toString());
                 res.end();

@@ -28,8 +28,8 @@ var app = http.createServer(function(req,res){
                 res.write('something error');
                 res.end();
             }
-        }catch{
-
+        }catch(err){
+                console.log(err)
         }
 
     }
